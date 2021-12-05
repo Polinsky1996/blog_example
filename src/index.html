@@ -8,11 +8,12 @@
     <title>Blog_example</title>
 </head>
 <body>
-    <section class="main">
+    <section class="main main--block">
         <div class="container">
-            <div class="main__wrapper">
-                <h1 class="main__headline">Denis<br>Novik</h1>
-                <div class="main__about-me">UX | UI designer<br>24 years old, Minsk</div>
+            <div class="main__wrapper font-main">
+                <h1 class="main__headline main__item">Denis<br>Novik</h1>
+                <div class="main__name main__item">UX | UI designer<br>24 years old, Minsk</div>
+                <div class="main__change-lang main__item">lang</div>
             </div>
             <picture class="main__image">
                 <source srcset="images/image-main@2x.webp" media="(min-width: 1100px)">
@@ -25,13 +26,13 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about about--block section-accent">
         <div class="container">
-            <div class="title">About me</div>
-            <div class="about__text">
-                <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
-                <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
-                <p>Ready to implement excellent projects with wonderful people.</p>
+            <div class="about__title title">About me</div>
+            <div class="about__text about__text--block font-main">
+                <p class="about__atrticle">Hi, I'm Denis – UX/UI designer from Minsk.<br> I'm interested in design and everything connected with it.</p>
+                <p class="about__atrticle">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                <p class="about__atrticle">Ready to implement excellent projects<br> with wonderful people.</p>
             </div>
         </div>
     </section>

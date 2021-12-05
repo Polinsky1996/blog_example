@@ -24,38 +24,6 @@
     width: min(90%, 58.88rem);
 }
 
-.title {
-    font-size: 2.125rem;
-    font-weight: 700;
-    text-align: center;
-    color: var(--font-color-main)
-}
-
-.main__wrapper {
-    display: flex;
-    align-items: flex-end;
-}
-
-.main__headline {
-    font-size: 2.96rem;
-    font-weight: 700;
-    text-align: left;
-    line-height: 112%;
-    color: var(--font-color-main);
-}
-
-.about {
-    background-color: var(--section-color-two);
-}
-
-.about__text p {
-    font-size: 1.125rem;
-    font-weight: 500;
-    /* line-height: 1; */
-    text-align: center;
-    color: var(--font-color-main);
-}
-
 /* Указываем box sizing */
 *,
 *::before,
@@ -94,7 +62,6 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.36rem;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
@@ -145,3 +112,77 @@ input {
     scroll-behavior: auto !important;
   }
 }
+
+.section-accent {background-color: var(--section-color-two);}
+/* класс секций с акцентным фоновым цветом */
+
+.title {
+    font-size: 2.125rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--font-color-main)
+}
+
+.font-main {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.36rem;
+    text-align: center;
+    color: var(--font-color-main);
+    /* свойства основных текстовых блоков */
+}
+
+.main--block {
+    padding-bottom: 6.54em;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 3.125em;
+}
+
+.main__item {
+    flex: 1 1 100%;
+}
+
+.main__headline {
+    font-size: 2.96rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 112%;
+    color: var(--font-color-main);
+}
+
+.main__name {
+    text-align: center;
+}
+
+.main__change-lang {
+    text-align: right;
+}
+
+.about--block {
+    padding: 7.5em 0 6.69em 0;
+}
+
+.about__title {
+    padding-bottom: 1em;
+}
+
+.about__text--block {
+    max-width: 30.3rem;
+    margin: 0 auto;
+}
+
+.about__text--block
+
+.about__atrticle {
+    padding-bottom: 2.8em;
+}
+
+.about__atrticle:last-child {
+    padding: 0;
+}
+
