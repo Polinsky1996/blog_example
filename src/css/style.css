@@ -1,11 +1,67 @@
+:root {
+    --section-color-one: #ffffff;
+    --section-color-two: #F6F6F6;
+    --font-color-main: #070707;
+    --font-color-no-accent: #828282;
+}
 
+@font-face {
+    font-family: 'Girloy';
+    src: url(../fonts/Gilroy-Medium.woff);
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Girloy';
+    src: url(../fonts/Gilroy-Bold.woff);
+    font-weight: 700;
+    font-display: swap;
+}
+
+.container {
+    margin: 0 auto;
+    width: min(90%, 58.88rem);
+}
+
+.title {
+    font-size: 2.125rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--font-color-main)
+}
+
+.main__wrapper {
+    display: flex;
+    align-items: flex-end;
+}
+
+.main__headline {
+    font-size: 2.96rem;
+    font-weight: 700;
+    text-align: left;
+    line-height: 112%;
+    color: var(--font-color-main);
+}
+
+.about {
+    background-color: var(--section-color-two);
+}
+
+.about__text p {
+    font-size: 1.125rem;
+    font-weight: 500;
+    /* line-height: 1; */
+    text-align: center;
+    color: var(--font-color-main);
+}
 
 /* Указываем box sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Girloy', Arial, sans-serif;
 }
 
 /* Убираем внутренние отступы */
@@ -38,7 +94,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.36rem;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
